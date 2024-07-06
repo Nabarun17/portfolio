@@ -1,0 +1,144 @@
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('uio.png');
+    background-color: #f0f0f0; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+.header {
+    background-size: cover;
+    background-color: #282c34; 
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0; 
+    color: white;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #61dafb;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #565a62;
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-item a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+    transform: scale(1.1);
+}
+.nav-item:nth-child(1) a {
+    background-color: #e91e63;
+}
+
+.nav-item:nth-child(2) a {
+    background-color: #9c27b0;
+}
+
+.nav-item:nth-child(3) a {
+    background-color: #3f51b5;
+}
+
+.nav-item:nth-child(4) a {
+    background-color: #03a9f4;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-item:nth-child(1) a:hover {
+    background-color: #c2185b;
+}
+
+.nav-item:nth-child(2) a:hover {
+    background-color: #7b1fa2;
+}
+
+.nav-item:nth-child(3) a:hover {
+    background-color: #303f9f;
+}
+
+.nav-item:nth-child(4) a:hover {
+    background-color: #0288d1;
+}
+.content {
+    background-color: #f0f0f0; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white; 
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 400px; 
+    object-fit: contain;
+    transition: opacity 1s;
+}
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
